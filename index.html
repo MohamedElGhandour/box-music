@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- IE Compatible Meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile First Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box Music</title>
+    <!-- File Bootstrap css -->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+    <!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+    <script src="respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="comment wow bounceInLeft" data-wow-duration="1.5s" data-wow-offset="10">
+            <ul class="text-comment list-unstyled">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="tail"></div>
+        </div>
+        <div class="radio wow bounceInRight" data-wow-duration="1.5s" data-wow-offset="10">
+            <ul class="Sound-output list-unstyled">
+                <li class="wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="1.2s" data-wow-offset="10"></li>
+                <li class="wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="1.3s" data-wow-offset="10"></li>
+                <li class="wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="1.4s" data-wow-offset="10"></li>
+            </ul>
+            <div class="box wow flipInY" data-wow-duration="1.s" data-wow-delay="1.6s" data-wow-offset="10">
+                <div class="cylinder" id="cylinder">
+                    <div class="first-line-cylinder">
+                        <div class="second-line-cylinder">
+                            <div class="third-line-cylinder">
+                                <div class="first-cylinder">
+                                    <div class="second-cylinder">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Joystick" class="Joystick wow rotateInUpRight" data-wow-duration="1.5s" data-wow-delay="1s" data-wow-offset="10">
+                <div class="first-line-Joystick">
+                    <div class="second-line-Joystick">
+                        <div class="third-line-Joystick">
+                            <div class="first-cylinder"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="commentone wow bounceInDown" data-wow-duration="1.5s" data-wow-delay=".5s" data-wow-offset="10">
+                <div class="tailone"></div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <button class="btn btn-lg btn-primary " id="start">Start</button>
+        <button class="btn btn-lg btn-primary " disabled id="stop">Stop</button>
+
+    </div>
+    <audio id="audio" class="hide" controls loop>
+        <source src="audio/Developers.mp3" type="audio/ogg">
+        <source src="audio/Developers.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script src="js/jquery.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
